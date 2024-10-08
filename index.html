@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Feedback Management</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hospital Feedback Form</h1>
+        <form id="feedbackForm" action="#" method="POST">
+            <!-- Patient Information Section -->
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" name="patient_name" placeholder="Enter your name" required>
+
+            <label for="patient-email">Email Address:</label>
+            <input type="email" id="patient-email" name="patient_email" placeholder="Enter your email" required>
+
+            <label for="visit-date">Date of Visit:</label>
+            <input type="date" id="visit-date" name="visit_date" required>
+
+            <!-- Feedback Section -->
+            <label for="feedback">Feedback about Hospital Services:</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Please provide your feedback..." required></textarea>
+
+            <!-- Rating Section -->
+            <h2>Rate Our Services</h2>
+            <div class="rating-section">
+                <div>
+                    <label for="doctor-rating">Doctor Services:</label>
+                    <select id="doctor-rating" name="doctor_rating" required>
+                        <option value="">Select Rating</option>
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="3">3 - Good</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="staff-rating">Staff Behavior:</label>
+                    <select id="staff-rating" name="staff_rating" required>
+                        <option value="">Select Rating</option>
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="3">3 - Good</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cleanliness-rating">Hospital Cleanliness:</label>
+                    <select id="cleanliness-rating" name="cleanliness_rating" required>
+                        <option value="">Select Rating</option>
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="3">3 - Good</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="index.js"></script>
+</body>
+</html>
